@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown Timer</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
     <!-- To utilize Font Awesome icons -->
-    <script src="https://kit.fontawesome.com/f99d80629d.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- To utilize Readex Pro font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +23,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <input id="duration" value="30" />
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+    <div class="timer">
+      <div class="controls">
+        <p class="units">(in seconds)</p>
+        <input id="duration" value="30" />
+        <div class="buttons">
+          <button id="start"><i class="fa-solid fa-play"></i></button>
+          <button id="pause"><i class="fa-solid fa-stop"></i></button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke="#778ca3"
+          stroke-width="15"
+          transform="rotate(-90 200 200)"
+        ></circle>
+      </svg>
+    </div>
+    <div class="instructions">Instructions: Click on number to adjust time</div>
+    <!-- Scripts -->
+    <!-- timer.js needs to run first before index.js -->
+    <script src="timer.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

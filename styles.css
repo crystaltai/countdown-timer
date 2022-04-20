@@ -1,0 +1,92 @@
+* {
+  font: inherit;
+  color: #353b48;
+}
+
+html {
+  margin: 150px auto;
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Readex Pro', 'Times New Roman', Times, serif;
+}
+
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+.units {
+  color: #718093;
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  background-color: #f9f9f9;
+  outline: none;
+  width: 240px;
+  font-size: 75px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.timer input:hover {
+  background-color: #dfe4ea;
+}
+
+.timer button {
+  display: inline;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.timer button:hover {
+  filter: brightness(95%);
+}
+
+.timer button:active {
+  filter: brightness(90%);
+}
+
+.timer button:disabled {
+  background-color: #f5f6fa;
+}
+
+.timer button:disabled:hover {
+  filter: none;
+}
+
+.timer button:disabled i {
+  color: #dcdde1;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instructions {
+  margin-top: 30px;
+}
